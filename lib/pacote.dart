@@ -1,4 +1,8 @@
-class PacoteDao {
+import 'package:flutter_application_1/op_agendamento.dart';
+import 'package:flutter_application_1/database.dart';
+
+
+class FuncoesDao {
 
 databaseHelper databaseHelper = databaseHelper();
 Database db = await databaseHelper.db;
@@ -30,7 +34,15 @@ final result = db.rawQuery(sql);
 login(){
 
   String sql = ‘SELECT * FROM cadastro WHERE cpf = 'cpf_login' AND senha = 'senha_login'’;
-
+  if(sql is null){
+    Text('usuário ou senha incorreto');
+  }
+  else{
+    Navigator.push(
+       context,
+       MaterialPageRoute(builder: (context) => opPage()),
+      );
+  }
 
 }
 

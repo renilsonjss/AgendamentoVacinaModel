@@ -1,6 +1,7 @@
 import 'package:flutter_application_1/ver_agendamento.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/pacote.dart';
 
 class AgendPage extends StatefulWidget {
   const AgendPage({Key? key}) : super(key: key);
@@ -9,6 +10,8 @@ class AgendPage extends StatefulWidget {
 }
 
 class _AgendPageState extends State<AgendPage> {
+  Future<void> listaFuncoes;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -160,6 +163,10 @@ class _AgendPageState extends State<AgendPage> {
                 child: SizedBox.expand(
                     child: TextButton(
                   onPressed: () {
+                    initState() {
+                    super.initState();
+                    listaFuncoes = FuncoesDao().cadastrarAgendamento();
+                  }, 
                       Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => ViewPage()),

@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_application_1/cadastro.dart';
 import 'package:flutter_application_1/op_agendamento.dart';
 import 'package:flutter_application_1/infos.dart';
+import 'package:flutter/pacote.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,7 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+Future<void> listaFuncoes;
+
   @override
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
@@ -116,11 +120,11 @@ class _HomePageState extends State<HomePage> {
               ),
               child: SizedBox.expand(
                   child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => OpPage()),
-                  );
+                onPressed: (){
+                   initState() {
+                    super.initState();
+                    listaFuncoes = FuncoesDao().login();
+                  }
                 },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_application_1/op_agendamento.dart';
+import 'package:flutter_application_1/pacote.dart';
 
 class CadsPage extends StatefulWidget {
   const CadsPage({Key? key}) : super(key: key);
@@ -9,6 +10,8 @@ class CadsPage extends StatefulWidget {
 }
 
 class _CadsPageState extends State<CadsPage> {
+Future<void> listaFuncoes;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -198,6 +201,10 @@ class _CadsPageState extends State<CadsPage> {
                   child: SizedBox.expand(
                       child: TextButton(
                     onPressed: () {
+                      initState() {
+                      super.initState();
+                      listaFuncoes = FuncoesDao().cadastrarUsuario();
+                     },
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => OpPage()),
