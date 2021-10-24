@@ -101,6 +101,7 @@ class _AgendPageState extends State<AgendPage> {
               SizedBox(height: 20),
               TextField(
                 keyboardType: TextInputType.name,
+                id = 'local_vac',
                 decoration: InputDecoration(
                     labelText: 'Local de preferência (posto de saúde)',
                     labelStyle: TextStyle(
@@ -115,6 +116,7 @@ class _AgendPageState extends State<AgendPage> {
               SizedBox(height: 20),
               TextField(
                 keyboardType: TextInputType.datetime,
+                id = 'dia_vac',
                 decoration: InputDecoration(
                     labelText: 'Dia de preferência (Ex.: 22/22/2222)',
                     labelStyle: TextStyle(
@@ -129,6 +131,7 @@ class _AgendPageState extends State<AgendPage> {
               SizedBox(height: 20),
               TextField(
                 keyboardType: TextInputType.name,
+                id = 'horario',
                 decoration: InputDecoration(
                     labelText: 'Horário de preferência (manhâ, tarde ou noite)',
                     labelStyle: TextStyle(

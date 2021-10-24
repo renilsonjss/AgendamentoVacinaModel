@@ -64,6 +64,7 @@ class _CadsPageState extends State<CadsPage> {
                 ),
                 TextField(
                   keyboardType: TextInputType.name,
+                  id='nome',
                   decoration: InputDecoration(
                       labelText: 'Nome Completo',
                       labelStyle: TextStyle(
@@ -77,7 +78,23 @@ class _CadsPageState extends State<CadsPage> {
                 ),
                 SizedBox(height: 5),
                 TextField(
+                  keyboardType: TextInputType.name,
+                  id='email',
+                  decoration: InputDecoration(
+                      labelText: 'Email:',
+                      labelStyle: TextStyle(
+                        color: Colors.black38,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                      )),
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(height: 5),
+                TextField(
                   keyboardType: TextInputType.number,
+                  id = 'cpf',
                   decoration: InputDecoration(
                       labelText: 'CPF (apenas o número, sem "." ou "-")',
                       labelStyle: TextStyle(
@@ -91,7 +108,23 @@ class _CadsPageState extends State<CadsPage> {
                 ),
                 SizedBox(height: 5),
                 TextField(
+                  keyboardType: TextInputType.number,
+                  id='numero_cartao_sus',
+                  decoration: InputDecoration(
+                      labelText: 'Número do cartão do SUS',
+                      labelStyle: TextStyle(
+                        color: Colors.black38,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                      )),
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(height: 5),
+                TextField(
                   obscureText: true,
+                  id = 'senha',
                   decoration: InputDecoration(
                       labelText: 'Senha',
                       labelStyle: TextStyle(
@@ -106,6 +139,7 @@ class _CadsPageState extends State<CadsPage> {
                 SizedBox(height: 5),
                 TextField(
                   keyboardType: TextInputType.name,
+                  id = 'local',
                   decoration: InputDecoration(
                       labelText: 'Cidade e UF',
                       labelStyle: TextStyle(
@@ -120,6 +154,7 @@ class _CadsPageState extends State<CadsPage> {
                 SizedBox(height: 5),
                 TextField(
                   keyboardType: TextInputType.datetime,
+                  id = 'data_nascimento',
                   decoration: InputDecoration(
                       labelText: 'Data de Nascimento (Ex.: 22/22/2222)',
                       labelStyle: TextStyle(
@@ -134,6 +169,7 @@ class _CadsPageState extends State<CadsPage> {
                 SizedBox(height: 5),
                 TextField(
                   keyboardType: TextInputType.name,
+                  id = 'sexo',
                   decoration: InputDecoration(
                       labelText: 'Sexo',
                       labelStyle: TextStyle(

@@ -63,6 +63,7 @@ class _HomePageState extends State<HomePage> {
             TextFormField(
               autofocus: true,
               keyboardType: TextInputType.number,
+              id = 'cpf_login',
               style: TextStyle(fontSize: 18),
               decoration: InputDecoration(
                 labelText: "CPF",
@@ -77,6 +78,7 @@ class _HomePageState extends State<HomePage> {
             TextFormField(
               autofocus: true,
               obscureText: true,
+              id = 'senha_login',
               style: TextStyle(fontSize: 18),
               decoration: InputDecoration(
                 labelText: "Senha",
