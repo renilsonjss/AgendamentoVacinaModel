@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_application_1/op_agendamento.dart';
-import 'package:flutter_application_1/pacote.dart';
+import 'package:flutter_application_1/data/pacote.dart';
 
 class CadsPage extends StatefulWidget {
   const CadsPage({Key? key}) : super(key: key);
