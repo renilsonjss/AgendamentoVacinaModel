@@ -13,6 +13,6 @@ Aplicação direcionada para a disciplina de PRMO.
 
 - Renilson José;
 
-- Vivianne Costa
+- Vivianne Costa.
 
 
