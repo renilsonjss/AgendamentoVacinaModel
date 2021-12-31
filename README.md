@@ -2,20 +2,17 @@
 
 Aplicação direcionada para a disciplina de PRMO. 
 
-## Distribuição dos trabalhos:
-- TODO [renilsonjs]:
-Criar tela inicial;
+## Equipe:
+- Ana Clara;
 
-- TODO [clari34]:
-Criar tela de cadastro e a de Informações;
+- Mariana Fernandes;
 
-- TODO [dudinha21]:
-Criar tela de agendamento;
+- Maria Eduarda Teixeira;
 
-- TODO [Viviannepio]:
-Criar tela de opções;
+- Marya Eduardha;
 
-- TODO [MarianaGuedes]:
-Criar tela para consultar o agendamento;
+- Renilson José;
+
+- Vivianne Costa
 
 
